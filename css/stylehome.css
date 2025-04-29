@@ -1,0 +1,116 @@
+*{
+    margin: 0 auto;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #002b5c;
+}
+
+
+#Titulo{
+    width: 10%;
+}
+
+#menu{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: rgb(252, 250, 234);
+    font-size: 1em;
+    font-family:"Poppins";
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre{
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    background-color: rgb(14, 67, 101);
+    height: 86vh;
+    align-items: center;
+
+}
+
+#sobre>article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#sobre>article h2{
+    font-weight: light;
+    justify-self: flex-start;
+    font-weight: 550;
+}
+
+#imgsobre{
+    width: 40%;
+    justify-self: flex-end;
+}
+
+#imgsobre img{
+    width: 100%;
+}
+
+#depoimentos{ 
+    width: 100vw;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Poppins";
+    background-color: #fff7ab;
+}
+
+#depoimentos p{
+    color: rgb(196, 113, 10);
+    width: 80%;
+    font-size: 1.5em;
+
+}
+
+#depoimentos h2{
+    color: rgb(14, 67, 101);
+    justify-self: flex-start;
+    font-size: 2em;
+    font-weight: 550;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
