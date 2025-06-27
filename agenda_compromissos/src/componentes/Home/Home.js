@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState, useEffect} from "react";
 import Criarevento from "../Criarevento/Criarevento";
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
         <div>
             <h1> Página inicial</h1>
             <p> Seja bem-vindo à página inicial da sua agenda pessoal. Aqui você terá acesso aos seus eventos já cadastrados</p>
-            <button onClick={() => AdicionarEvento({titulo: "Próxima festança dos blind", descricao: "Hoje às 14 horas próxima resenha pra gente bater papo! "})}>Adicionar um evento</button>
+<Criarevento onNovoEvento = {AdicionarEvento}></Criarevento>
             <h2> Lista de eventos</h2>
             <ul>
                 {eventos.map((evento, index) => (

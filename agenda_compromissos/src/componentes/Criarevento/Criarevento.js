@@ -1,15 +1,28 @@
+import './Criarevento';
 import { useState } from "react";
 
-function Criarevento() {
+function Criarevento({ onNovoEvento }) {
     let [titulo, mudarTitulo] = useState("");
     let [descricao, mudarDescricao] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("É hora do alert!");
-        alert(`Novo evento criado!
+
+        const novoEvento = {
+            titulo: titulo.trim(),
+            descricao: descricao.trim()
+        }
+
+        if (onNovoEvento) {
+            onNovoEvento(novoEvento);
+            alert(`Novo evento criado!
         Título: ${titulo}
         Descrição: ${descricao}`);
+        } else {
+            alert("Não foi possível adicionar o evento, tente novamente");
+        }
+        
+
         mudarTitulo("");
         mudarDescricao("");
     }
@@ -31,7 +44,7 @@ function Criarevento() {
                     value={descricao}
                     onChange={(e) => mudarDescricao(e.target.value)}
                 />
-                <input type="submit"></input>
+                <input type="submit" value="Adicionar evento"></input>
             </form>
         </div>
     )
