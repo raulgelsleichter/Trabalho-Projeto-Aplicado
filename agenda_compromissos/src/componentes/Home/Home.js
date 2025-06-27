@@ -2,14 +2,20 @@ import { useState, useEffect} from "react";
 import Criarevento from "../Criarevento/Criarevento";
 
 function Home() {
-    const [eventos, atualizarEventos] = useState([
-        { titulo: "Show Chitãozinho Chororó", descricao: "3 horas com Chitãozinho Chororó pra animar o povo todo!"},
-        { titulo: "Jogo Avaí x Criciúma", descricao: "às 14 horas o leão da ilha entra em campo contra o Criciúma, grande jogo na série B do campeonato brasileiro 2025! "}
-    ]);
+    const dadosSalvos = localStorage.getItem("eventos");
+    const eventosIniciais = dadosSalvos ? JSON.parse(dadosSalvos): [
+        { titulo: "Jogo no Brasileirão série B", descricao: "Avaí x Criciúma no sábado dia 28/06/2025, às 14 horas em campo pela série B do campeonato brasileiro"}
+    ]
+    const [eventos, atualizarEventos] = useState(eventosIniciais);
 
+    useEffect(() => {
+        localStorage.setItem("eventos", JSON.stringify(eventos));
+    }, [eventos]);
+    
     function AdicionarEvento(novoEvento) {
         atualizarEventos([...eventos, novoEvento]);
     }
+
     return (
         <div>
             <h1> Página inicial</h1>
