@@ -1,0 +1,23 @@
+header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #48B281;
+}
+
+#Titulo{
+    width: 30%;
+    color: #FFF;
+    font-family: "Antonio";
+}
+
+#menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -4,7 +4,7 @@ import Criarevento from "../Criarevento/Criarevento";
 function Home() {
     const dadosSalvos = localStorage.getItem("eventos");
     const eventosIniciais = dadosSalvos ? JSON.parse(dadosSalvos): [
-        { titulo: "Jogo no Brasileirão série B", descricao: "Avaí x Criciúma no sábado dia 28/06/2025, às 14 horas em campo pela série B do campeonato brasileiro"}
+        { titulo: "Jogo no Brasileirão série B", descricao: "Avaí x Criciúma na sexta-feira dia 27/06/2025, às 20:30 horas em campo pela série B do campeonato brasileiro"}
     ]
     const [eventos, atualizarEventos] = useState(eventosIniciais);
 

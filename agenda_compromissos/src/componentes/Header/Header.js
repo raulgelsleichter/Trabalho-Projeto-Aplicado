@@ -1,10 +1,11 @@
+import "./Header.css";
 import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div>
-            <h1> Agenda pessoal</h1>
-            <nav>
+            <h1 id="Titulo"> Agenda pessoal</h1>
+            <nav id="menu">
                 <ul>
                     <li>
                         <Link to="/home"> Página inicial</Link>
