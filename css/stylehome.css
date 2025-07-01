@@ -11,12 +11,18 @@ header{
     position: static;
     top: 0;
     left: 0;
-    background-color: #002b5c;
+    background-color: #48B281;
 }
 
 
+main{
+    background-color: #55db89;
+}
+
 #Titulo{
-    width: 10%;
+    width: 30%;
+    color: #FFF;
+    font-family: "Antonio";
 }
 
 #menu{
@@ -36,7 +42,7 @@ header{
     text-decoration: none;
     color: rgb(252, 250, 234);
     font-size: 1em;
-    font-family:"Poppins";
+    font-family:"Antonio";
 }
 
 
@@ -46,22 +52,35 @@ main{
     align-items: center;
 }
 
+h2{
+    font-family: "Antonio";
+    color: #525252;
+    padding: 15px;
+}
+
+#meio{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: #48B281;
+}
+
 #sobre{
     display: flex;
-    margin: 0 auto;
-    width: 100vw;
-    background-color: rgb(14, 67, 101);
+    width: 600px;
+    background-color: #48B281;
     height: 86vh;
     align-items: center;
 
 }
 
-#sobre>article{
+#textosobre{
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 40%;
+    width: 1000px;
     color: #FFF;
-    font-family: "Poppins";
+    font-family: "Antonio";
     font-size: 1.5em;
     line-height: 2em;
 }
@@ -70,15 +89,6 @@ main{
     font-weight: light;
     justify-self: flex-start;
     font-weight: 550;
-}
-
-#imgsobre{
-    width: 40%;
-    justify-self: flex-end;
-}
-
-#imgsobre img{
-    width: 100%;
 }
 
 #depoimentos{ 
@@ -110,7 +120,8 @@ footer{
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    background-color: #55db89;
 }
 
 
