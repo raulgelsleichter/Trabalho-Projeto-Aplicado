@@ -1,7 +1,9 @@
 import './Criarevento';
 import { useState } from "react";
+import {BrowserRouter, useNavigate} from "react-router-dom";
 
 function Criarevento({ onNovoEvento }) {
+    let navigate = useNavigate();
     let [titulo, mudarTitulo] = useState("");
     let [descricao, mudarDescricao] = useState("");
 

@@ -15,7 +15,6 @@ function App() {
             <Routes>
                 <Route path='/home' element={<Home />}></Route>
                 <Route path='/sobre' element = {<Sobre />}></Route>
-                <Route path='/criarevento' element = {<Criarevento />}></Route>
             </Routes>
         </BrowserRouter>
 
