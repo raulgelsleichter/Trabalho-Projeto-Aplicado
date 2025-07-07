@@ -1,23 +1,33 @@
-header{
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #48B281;
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header {
+  background-color: #48B281;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-#Titulo{
-    width: 30%;
-    color: #FFF;
-    font-family: "Antonio";
+.header a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "Inter";
 }
 
-#menu{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+.header a:hover {
+  color: #404040;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Antonio";
 }

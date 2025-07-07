@@ -1,11 +1,11 @@
+import "./Footer.css";
+
 function Footer() {
     return (
-        <div>
-            <footer>
-                &copy; 2025. Todos os direitos reservados.
-            </footer>
-        </div>
-    )
-}
-
-export default Footer;
+      <footer className="footer">
+        &copy; {new Date().getFullYear()} Agenda Pessoal. Todos os direitos reservados.
+      </footer>
+    );
+  }
+  
+  export default Footer;
