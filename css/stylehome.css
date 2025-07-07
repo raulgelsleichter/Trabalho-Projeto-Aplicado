@@ -1,23 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0 auto;
 }
 
+body{
+    background-color: #FFF;
+}
+
 header{
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
+    justify-content: space-around;
+    align-items: center;
     background-color: #48B281;
-}
+} 
 
-
-main{
-    background-color: #55db89;
-}
 
 #Titulo{
     width: 30%;
@@ -26,7 +29,7 @@ main{
 }
 
 #menu{
-    width: 30vw;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -35,86 +38,66 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
     list-style: none;
 }
 
 #menu a{
     text-decoration: none;
     color: rgb(252, 250, 234);
-    font-size: 1em;
-    font-family:"Antonio";
+    font-size: 1.2em;
+    font-family: "Inter";
 }
 
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h2{
+#nome{
     font-family: "Antonio";
     color: #525252;
+    margin-top: 15vh;
     padding: 15px;
-}
-
-#meio{
     display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    background-color: #48B281;
-}
-
-#sobre{
-    display: flex;
-    width: 600px;
-    background-color: #48B281;
-    height: 86vh;
     align-items: center;
-
+    font-size: 1.5em;
 }
 
-#textosobre{
+#sobrenos{
     display: flex;
-    justify-content: flex-start;
+    width: 100%;
+    height: 60vh;
+    background-color: #48B281;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    justify-content: space-around;
+}
+
+#sobrenos>article{
+    display: flex;
     flex-wrap: wrap;
-    width: 1000px;
-    color: #FFF;
-    font-family: "Antonio";
-    font-size: 1.5em;
+    margin: auto;
+    width: 40%;
+    font-family: "Inter";
+    font-size: 1.2em;
     line-height: 2em;
 }
 
-#sobre>article h2{
-    font-weight: light;
-    justify-self: flex-start;
-    font-weight: 550;
-}
-
-#depoimentos{ 
-    width: 100vw;
-    height: 40vh;
-    margin: 0 auto;
+#sobrenos p{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-family: "Poppins";
-    background-color: #fff7ab;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#depoimentos p{
-    color: rgb(196, 113, 10);
-    width: 80%;
-    font-size: 1.5em;
-
+#sobreimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
 }
 
-#depoimentos h2{
-    color: rgb(14, 67, 101);
-    justify-self: flex-start;
-    font-size: 2em;
-    font-weight: 550;
+#sobreimg img{
+    width: 90%;
+    height: auto;
 }
+
+
 
 footer{
     width: 100vw;
