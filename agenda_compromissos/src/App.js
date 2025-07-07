@@ -5,6 +5,7 @@ import Footer from './componentes/Footer/Footer';
 import Sobre from './componentes/Sobre/Sobre';
 import Home from "./componentes/Home/Home";
 import Header from './componentes/Header/Header';
+import Criarevento from './componentes/Criarevento/Criarevento';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path='/home' element={<Home />}></Route>
                 <Route path='/sobre' element = {<Sobre />}></Route>
+                <Route path='/criarevento' element = {<Criarevento />}></Route>
             </Routes>
         </BrowserRouter>
 

@@ -13,6 +13,9 @@ function Header() {
                     <li>
                         <Link to="/sobre">Sobre o projeto</Link>
                     </li>
+                    <li>
+                        <Link to="./criarevento">Cadastrar um evento</Link>
+                    </li>
                 </ul>
             </nav>
             <p> Organize seus compromissos de forma fácil e rápida</p>
